@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <div class="left-box">
+      <img class="brand_logo" src="./images/logo.svg" alt="brand_logo">
+      <h1><span> We're</span> coming soon</h1>
+
+      <p> Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form id="myForm" onsubmit="false" name="form1" action="">
+        <input required name="text1" id="email" type="text" placeholder="Email Address"></input>
+        <button onclick="ValidateEmail(document.form1.text1)" id="submit" type="submit" class=""><img
+            src="./images/icon-arrow.svg" alt=""></button>
+
+        <div class="error">
+          <img class="errimg" src="./images/icon-error.svg" alt="">
+          <p>Please provide a valid email</p>
+        </div>
+        <div class="success">
+          <p>Valid email</p>
+        </div>
+      </form>
+    </div>
+    <div class="right-box">
+      <img class="hero_img" src="./images/hero-desktop.jpg" alt="hero_image">
+    </div>
+
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>
