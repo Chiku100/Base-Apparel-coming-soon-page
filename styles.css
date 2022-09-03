@@ -55,7 +55,7 @@ p {
 }
 #email {border: 1px hsl(0, 36%, 70%) solid;
     border-radius: 20px;
-    width: 70%;
+    width: 100%;
     height: 3rem;
     padding: 1rem;
     color: hsl(0, 36%, 70%);
