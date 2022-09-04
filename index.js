@@ -1,18 +1,21 @@
 function ValidateEmail(inputText) {
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (inputText.value.match(mailformat)) {
-        alert("successfully submitted"); 
-       
+        alert("successfully submitted");
+        document.querySelector(".val").classList.add("error");
+        document.querySelector(".errimg").classList.add("error"); 
+        document.getElementById("submit").disabled = false;
         return true;
     }
     else {
 
-        document.querySelector(".error").classList.toggle("error");
-        document.getElementById("submit").disabled = true;
-        document.querySelector("#email").focus();
+        document.querySelector(".val").classList.remove("error");
+        document.querySelector(".errimg").classList.remove("error");
+        
+        document.getElementById("submit").disabled = true
         setTimeout(() => {
             document.location.reload();
-        }, 1000);
+        }, 2000);
         return false;
 
     }
