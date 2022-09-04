@@ -79,11 +79,13 @@ button {border: 0;
     background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 80%, 86%));
   }
   .error{
-    display: none;
+    visibility: hidden;
   }
-  .error img{position: relative;
-left: 18rem;
-bottom: 2.2rem;}
+.errimg{
+    position: relative;
+    left: 280px;
+    bottom: 35px;
+}
 @media screen and (max-width:600px) {
     body {
         
